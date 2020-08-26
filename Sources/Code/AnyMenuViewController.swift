@@ -287,7 +287,6 @@ public class AnyMenuViewController: UIViewController {
         contentViewController.view.frame = contentContainerView.bounds
         contentViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         contentViewController.view.translatesAutoresizingMaskIntoConstraints = true
-        contentViewController.view.removeFromSuperview()
         contentContainerView.addSubview(contentViewController.view)
         contentViewController.view.isHidden = false
         contentViewController.didMove(toParent: self)
